@@ -28,7 +28,6 @@ public class MythicalCreature {
     @Column(name = "description")
     private String description;
 
-    ///WORKING ON
     @ManyToOne
     @JoinColumn(name = "enclosure_id")
     private Enclosure enclosure;
@@ -105,6 +104,9 @@ public class MythicalCreature {
     }
 
     public String eat(){
+
+        //Uses factory method to generate killBehaviour, and returns string from this.
+
         IKillFactory iKillFactory = new IKillFactory();
         IKill killBehaviour = iKillFactory.getKillBehaviour(this.killBehaviourString);
         String eatHuman = killBehaviour.kill();

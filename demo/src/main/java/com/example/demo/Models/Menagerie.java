@@ -19,12 +19,10 @@ public class Menagerie {
 
     @JsonIgnoreProperties
     @OneToMany(mappedBy = "menagerie", fetch = FetchType.LAZY)
-//    @JoinColumn(name = "enclosure_id_inMenagerie")
     private List<Enclosure> enclosures;
 
     @JsonIgnoreProperties("menagerie")
     @OneToMany(mappedBy = "menagerie", fetch = FetchType.LAZY)
-//    @JoinColumn(name = "visitor_id_deleteme")
     private List<Visitor> visitors;
 
     @Column(name = "entrance")
@@ -72,6 +70,7 @@ public class Menagerie {
     public void setEntranceFee(double entranceFee) {
         this.entranceFee = entranceFee;
     }
+
     public void addEnclosure(Enclosure enclosure){
         enclosures.add(enclosure);
     }

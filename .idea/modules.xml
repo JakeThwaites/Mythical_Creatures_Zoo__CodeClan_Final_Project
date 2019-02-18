@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/Mythical_Creatures_Zoo__CodeClan_Final_Project.iml" filepath="$PROJECT_DIR$/.idea/Mythical_Creatures_Zoo__CodeClan_Final_Project.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/.idea/final_project.iml" filepath="$PROJECT_DIR$/.idea/final_project.iml" />
->>>>>>> develop
     </modules>
   </component>
 </project>
