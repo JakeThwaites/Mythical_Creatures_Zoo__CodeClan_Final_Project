@@ -26,7 +26,14 @@ const RegionsDropDown = ({ onRegionSelected, creatures = [] }) => {
   return (
     <select id="region-selector" onChange={handleChange} defaultValue="default">
       <option value="default">All Regions</option>
-      {options}
+      <option value="Africa">Africa</option>
+          <option value="Asia">Asia</option>
+          <option value="British Isles">British Isles</option>
+          <option value="Eastern Mediterranean">Eastern Mediterranean</option>
+          <option value="Northern Europe">Northern Europe</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Oceania">Oceania</option>
     </select>
   )
 }

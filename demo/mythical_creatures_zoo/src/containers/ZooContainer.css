@@ -1,12 +1,12 @@
+body {
+   /* background-color: lavender; */
+}
+
 .container {
    display: flex;
    flex-wrap: wrap;
    align-content: center;
    height: 100%;
-}
-
-body {
-   background-color: lavender;
 }
 
 .navbar {
@@ -109,12 +109,18 @@ ul {
    padding: 10px;
    border-color: grey;
    border-radius: 10px;
+   
 }
 
-.add-creature-form {
+.creature-form{
    display: flex;
-   flex-direction: column;
+   flex-flow: row nowrap;
    height: 100%;
+}
+
+.form-item {
+   width: 40%;
+  height: 40%;
 }
 
 .gender_input {
@@ -127,4 +133,8 @@ ul {
    display: flex;
   justify-content: space-evenly;
   height: 100%;
+}
+
+label {
+   display: block;
 }

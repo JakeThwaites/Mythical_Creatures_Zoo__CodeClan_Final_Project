@@ -10,14 +10,14 @@ const CreatureList = ({onRegionSelected, creatures = [] }) => {
 
    const listCreatures = creatures.map((creature, index) => {
       return (
-          <p key={index} className="creature_list">
+          <div key={index} className="creature_list">
             <CreatureDetail
                name={creature.name}
                breed={creature.breed}
                description={creature.description}
             >
             </CreatureDetail>
-         </p>
+         </div>
       );
    });
 
