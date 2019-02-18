@@ -1,5 +1,6 @@
 package com.example.demo.Models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,9 +14,9 @@ public class Enclosure {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JsonIgnore
-    @OneToMany
-    @JoinColumn(name = "mythical_creature_id")
+    @JsonIgnoreProperties
+    @OneToMany(mappedBy = "enclosure", fetch = FetchType.LAZY)
+
     private List<MythicalCreature> creatures;
 
     @Column(name = "size")

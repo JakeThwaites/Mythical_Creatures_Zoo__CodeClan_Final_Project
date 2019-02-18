@@ -1,0 +1,46 @@
+/* 
+
+ .creature_list {
+   display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  height: 100%;
+ }
+
+ li {
+   display: flex;
+   flex-wrap: wrap;
+   flex-flow: row;
+ }
+
+ ul {
+   display: flex;
+   flex-wrap: wrap;
+   flex-flow: column;
+ }
+
+ .creature_list {
+   display: flex;
+   flex-wrap: wrap;
+   flex-flow: row;
+   justify-content: space-evenly;
+   align-content: space-around;
+   height: 100%;
+ }
+
+ .creature {
+
+   width: 30%;
+   height: 100%;
+   text-align: left;
+   background-color: white;
+   width: 330px;
+
+   margin: 10px;
+ }
+
+ .homepage{
+   text-align: center;
+   font-size: 80px;
+ }
+  */

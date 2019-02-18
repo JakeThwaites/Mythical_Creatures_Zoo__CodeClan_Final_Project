@@ -18,6 +18,14 @@ public class Visitor {
         this.menagerie = null;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Menagerie getMenagerie() {
         return menagerie;
     }
@@ -25,4 +33,5 @@ public class Visitor {
     public void setMenagerie(Menagerie menagerie) {
         this.menagerie = menagerie;
     }
+
 }

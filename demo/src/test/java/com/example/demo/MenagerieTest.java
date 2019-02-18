@@ -21,8 +21,8 @@ public class MenagerieTest {
     @Before
     public void before() {
         killBehaviour = new IKillEat();
-        harpy = new MythicalCreature("Harpy", Gender.Male, "IKillEat", "Greek", "", "Harpy");
-        dragon = new MythicalCreature("bob", Gender.Female, "IKillEat", "Greek", "", "Dragon");
+        harpy = new MythicalCreature("Harpy", "Male", "IKillEat", "Greek", "", "Harpy");
+        dragon = new MythicalCreature("bob", "Male", "IKillEat", "Greek", "", "Dragon");
         enclosure = new Enclosure(2, "Greek", "Greek");
         menagerie = new Menagerie("Name", 10);
         visitor = new Visitor();

@@ -16,8 +16,8 @@ public class MythicalCreatureTest {
 
     @Before
     public void before() {
-        harpy = new MythicalCreature("Harpy", Gender.Male, "IKillEat", "Greek", "", "Harpy");
-        unicorn = new MythicalCreature("Melvin", Gender.Female, "IDontKill", "Greek", "", "Unicorn");
+        harpy = new MythicalCreature("Harpy", "Male", "IKillEat", "Greek", "", "Harpy");
+        unicorn = new MythicalCreature("Melvin", "Male", "IDontKill", "Greek", "", "Unicorn");
     }
 
     @Test
